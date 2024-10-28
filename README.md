@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For this project I was tasked with analyzing an Organization's ('Oscorp') cybersecurity status and designing a comprehensive cybersecurity program utilizing the NIST CSF 2.0 to uplift its security posture. I was given a 'current status' report, much like one that would be compiled after initial investigations and interviews with employees and stakeholders. Using the NIST CSF, I conducted a pass/fail assesment and presented recommendations for improvement. I decided to start with a short presentation to stakeholders to explain the framework and roadmap and ended with presenting them with a comprehensive list of recomendations and procedures to be implemented.
+For this project I was tasked with analyzing an Organization's ('Oscorp') cybersecurity status and designing a comprehensive cybersecurity program utilizing the [NIST CSF 2.0](https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20) to uplift its security posture. I was given a 'current status' report, much like one that would be compiled after initial investigations and interviews with employees and stakeholders. Using the NIST CSF, I conducted a pass/fail assesment and presented recommendations for improvement. I decided to start with a short presentation to stakeholders to explain the framework and roadmap and ended with presenting them with a comprehensive list of recomendations and procedures to be implemented.
 
 ## CSF Core Functions
 The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER — organize cybersecurity outcomes at their highest level.
@@ -39,49 +39,49 @@ A Target Profile specifies the desired outcomes that an organization has selecte
 |---------------|----------------------------------------------------------------------------------|------------------------------
 |Tier 4: Adaptive | There is an organization-wide approach to managing cybersecurity risks that uses risk-informed policies, processes, and procedures to address potential cybersecurity events. The relationship between cybersecurity risks and organizational objectives is clearly understood and considered when making decisions. Executives monitor cybersecurity risks in the same context as financial and other organizational risks. The organizational budget is based on an understanding of the current and predicted risk environment and risk tolerance. Business units implement executive vision and analyze system-level risks in the context of the organizational risk tolerances. Cybersecurity risk management is part of the organizational culture. It evolves from an awareness of previous activities and continuous awareness of activities on organizational systems and networks. The organization can quickly and efficiently account for changes to business/mission objectives in how risk is approached and communicated. | The organization adapts its cybersecurity practices based on previous and current cybersecurity activities, including lessons learned and predictive indicators. Through a process of continuous improvement that incorporates advanced cybersecurity technologies and practices, the organization actively adapts to a changing technological landscape and responds in a timely and effective manner to evolving, sophisticated threats. The organization uses real-time or near real-time information to understand and consistently act upon the cybersecurity risks associated with its suppliers and the products and services it acquires and uses. Cybersecurity information is constantly shared throughout the organization and with authorized third parties.
 
-At all times the question should be asked whether data is kept *Confidential*, its *Integrity* is upheld, and is readily *Available* and what risks and vulnerabilities present a danger to this ‘CIA Triad’. 
+At all times the question should be asked whether data is kept *Confidential*, its *Integrity* is upheld, and is readily *Available* and what risks and vulnerabilities present a danger to this ‘[CIA Triad](https://www.nccoe.nist.gov/publication/1800-26/VolA/index.html)’. 
 
 ![image](https://github.com/user-attachments/assets/5b8e35de-2c04-4de8-a82c-bb526a3f6f5c)
 ------
 <details close> 
 <summary> <h3> Oscorp's Current status report (Click here)</h3> </summary>
 
-Current Oscorp cyber security team:
+**Current Oscorp cybersecurity team:**
 - Cyber security analyst: generalist, responds to cyber incidents as they come. Reports
 to Oscorp’s IT manager.
 - Network engineer: manages the firewalls. Reports to the Network Team Leader.
-- Cyber Security Consultant: your new role it Oscorp. You will initially report to the IT
+- Cyber Security Consultant: your new role at Oscorp. You will initially report to the IT
 manager.
 
-Oscorp Current Cyber Security Controls:
-- OrganisaDonal governance:
+**Oscorp Current Cyber Security Controls:**
+- Organisational governance:
   - CEO has a clear business strategy for the business. However, roles and
-responsibiliDes for cyber security haven’t been defined. They’re assigned to
-the IT team. There is no cyber security strategy.
+responsibilities for cybersecurity haven’t been defined. They’re assigned to
+the IT team. There is no cybersecurity strategy.
 
 - Asset Management:
   - The IT team has a spreadsheet with serial numbers of laptops.
   - The spreadsheet includes the model of each machine and details about the
 warranty.
-  - Oscorp uses MicrosoK Office365 and relies exclusively on SoKware-as-a-
-Service applicaDons.
-  - All data is in MicrosoK Azure cloud
-  - The IT team uses a Secure OperaDng Environment (SOE) to image all their
+  - Oscorp uses Microsoft Office365 and relies exclusively on Software-as-a-
+Service applications.
+  - All data is in Microsoft Azure cloud
+  - The IT team uses a Secure Operating Environment (SOE) to image all their
 laptops with the latest Windows desktop version
 
-- Business ConDnuity and Disaster Recovery:
-  - The IT team conducts regular disaster recovery tesDng
-  - The IT team has clear and documented business conDnuity plans
+- Business Continuity and Disaster Recovery:
+  - The IT team conducts regular disaster recovery testing
+  - The IT team has clear and documented business continuity plans
   - The IT team takes regular backups. Backups get tested periodically
 
 - Vulnerability management:
   - Oscorp have purchased Qualys vulnerability scanner.
   - The IT team uses Qualys on an ad-hoc basis.
   - There is no formal vulnerability management program in place.
-  - Large number of high and severe vulnerabiliDes reported by Qualys
+  - Large number of high and severe vulnerabilities reported by Qualys
 
 - Risk management:
-  - Oscorp has a risk team that performs financial risk acDviDes.
+  - Oscorp has a risk team that performs financial risk activities.
   - There is no technology or cyber risk process at Oscorp.
 
 - Third Party Risk Management:
@@ -89,47 +89,47 @@ laptops with the latest Windows desktop version
   - Contracts are reviewed by procurement and finance, not IT.
 
 - Identity and Access Management:
-  - Oscorp uses MicrosoK AcDve Directory to manage users and groups
-  - There is no privileged access management soluDon in place
+  - Oscorp uses Microsoft Active Directory to manage users and groups
+  - There is no privileged access management solution in place
   - Admin account password is shared with a few senior members of the IT team
   - Access to resources is granted upon request
-  - The organisaDon does not use two-factor authenDcaDon for login
+  - The organisation does not use two-factor authentication for login
   - Complex login passwords are used
-  - Employees use a VPN soluDon to login remotely when required
+  - Employees use a VPN solution to login remotely when required
 
 - Network security:
-  - The organisaDon has Palo Alto Next Gen firewalls.
+  - The organisation has Palo Alto Next Gen firewalls.
   - The firewalls have been configured by the network
   - The firewalls get audited every year by the network team
   - The firewalls get regular updates
   - The IT team have up to date network diagrams. The diagrams include the
-cloud the environment.
+cloud environment.
   - The network is segmented using VLANs.
 
 - Physical Security:
   - Oscorp is a highly secure facility, with state-of-the-art CCTV cameras
 everywhere
   - Oscorp takes physical very seriously
-  - They do extensive ve]ng for all their employees
-  - The have a 24/7 monitoring for their research labs and physical faciliDes
+  - They do extensive vettng for all their employees
+  - The have a 24/7 monitoring for their research labs and physical facilities
 
 - Data Security:
   - Oscorp doesn’t have a DLP soluDon
-  - All data resides in MicrosoK Azure cloud and MicrosoK Office 365
-  - Key criDcal applicaDon is a SaaS service from Horizon Labs.
+  - All data resides in Microsoft Azure cloud and Microsoft Office 365
+  - Key critical application is a SaaS service from Horizon Labs.
 
 - Policy:
   - There is one generic IT policy in place
-  - No formal informaDon security policy
-  - There is no data governance policies or informaDon classificaDon
+  - No formal information security policy
+  - There is no data governance policies or information classificaDon
 
-- Cyber Security detecDon and response:
-  - There is no detecDon or response capability
-  - The IT team responds to alerts from the anD-virus (MicrosoK Defender)
+- Cyber Security detection and response:
+  - There is no detection or response capability
+  - The IT team responds to alerts from the anti-virus (Microsoft Defender)
   - No SIEM in place
 
-- Security EducaDon and Awareness:
-  - All employees are required to do an inducDon web training module. The
+- Security Education and Awareness:
+  - All employees are required to do an induction web training module. The
 module includes basic instructions about cyber security.
 
   </details>
@@ -143,9 +143,9 @@ Utilizing CSF Core functions as a guide, an assessment of Oscorp identified many
 <details close> 
 <summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
 
- - ![Screenshot 2024-10-27 205100](https://github.com/user-attachments/assets/586dd539-f042-4bea-b9d2-290b8e445571)
+![Screenshot 2024-10-27 205100](https://github.com/user-attachments/assets/586dd539-f042-4bea-b9d2-290b8e445571)
 
-- ![Screenshot 2024-10-27 205255](https://github.com/user-attachments/assets/c0c4e42a-7736-48b1-ac59-92604fef17ca)
+![Screenshot 2024-10-27 205255](https://github.com/user-attachments/assets/c0c4e42a-7736-48b1-ac59-92604fef17ca)
 
   </details>
 
@@ -158,8 +158,10 @@ Utilizing CSF Core functions as a guide, an assessment of Oscorp identified many
 A vulnerability management policy needs to be implemented. Vulnerabilities need to be classified and prioritized. It is recommended an access agent is installed on all permanent and non-permanent network connected devices in order to authenticate the scan. Utilizing an access agent in conjunction with a vulnerability scanner will greatly improve the scope of the scans. 
 Third-party risk management policy needs to be implemented and IT department needs third-party service provider involvement.
 Assets need to be labeled with a sensitivity or criticality classification determined by the Maximum Tolerable Outage matrix. See figure below for example.
+
 ![image](https://github.com/user-attachments/assets/0fd3f160-1f11-4da1-a781-d0837b1115c7)
 `(RPO=recovery point objective, RTO=recovery time objective, WRT=working recovery time)`
+
 Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) need to be established and implemented.
 
 ### Business Environment:
@@ -191,10 +193,10 @@ A full-scale Cyber Security Risk Management policy needs to be implemented utili
 
 ![Screenshot 2024-09-06 155149](https://github.com/user-attachments/assets/88309da8-792e-4e3d-a6ed-d7c293cfc655)
 
-
-
+------
 <!--## PROTECT-->
 ![Screenshot 2024-10-28 134843](https://github.com/user-attachments/assets/eaa0f70b-acb1-43ba-9186-53f4c406875c)
+
 <details close> 
 <summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
 
@@ -206,6 +208,7 @@ A full-scale Cyber Security Risk Management policy needs to be implemented utili
 
 
   </details>
+  
 ### Access Controls:
 
 -	*Identities and credentials are NOT adequately managed for authorized devices and users.* No use of Multi-Factor Authentication. No specified off-boarding procedures. No periodic access reviews established.
@@ -248,8 +251,9 @@ Configuration change protocols need to be implemented and documented. Physical s
 -	*Removable media is NOT protected and its use restricted according to policy.* No data exfiltration policy in place.
 -	*Communications and control networks are NOT adequately protected.* Network traffic is not monitored adequately.
 
-A Security Information and Event Management (SIEM) needs to be implemented and aligned with industry standard framework (MITRE ATT&CK). Policy needs to be established and personnel appointed for monitoring. 
+A Security Information and Event Management (SIEM) needs to be implemented and aligned with industry standard framework [MITRE ATT&CK](https://attack.mitre.org/). Policy needs to be established and personnel appointed for monitoring. 
 
+------
 <!--## DETECT-->
 ![Screenshot 2024-10-28 134853](https://github.com/user-attachments/assets/2a5d2bd2-ba9b-4cff-84c2-840f73c4633b)
 
@@ -276,8 +280,8 @@ Implement a SIEM to capture and monitor network traffic. Merely monitoring traff
 
 Detection and response capabilities need to be established. Roles and responsibilities need to be defined and implemented. Separation of duties between IT department and Cyber security department need to be considered. Use periodic Penetration Test to verify robustness of security posture.
 
+------
 <!-- RESPOND-->
-
 ![Screenshot 2024-10-28 134902](https://github.com/user-attachments/assets/0e5fa430-0cea-4d22-be43-912381a82917)
 
 <details close> 
@@ -312,6 +316,7 @@ Ensure analysis is conducted to determine adequate response and support recovery
 
 Analyze, test and update incident response plans continuously. 
 
+------
 <!--## RECOVER-->
 ![Screenshot 2024-10-28 134912](https://github.com/user-attachments/assets/b595cac7-1881-4388-b3ac-4e5f59a099fc)
 
