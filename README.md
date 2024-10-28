@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For this project I was tasked with analyzing an Organization's ('Oscorp') cybersecurity status and designing a comprehensive cybersecurity program utilizing the NIST CSF 2.0 to uplift Oscorp's security posture. I was given a 'current status' report, much like one that would be compiled after initial investigations and interviews with employees and stakeholders. Using the NIST CSF, I conducted a pass/fail assesment and presented recommendations for improvement. I decided to start with a short presentation to stakeholders to explain the framework and roadmap and ended with presenting them with a comprehensive list of recomendations and procedures to be implemented.
+For this project I was tasked with analyzing an Organization's ('Oscorp') cybersecurity status and designing a comprehensive cybersecurity program utilizing the NIST CSF 2.0 to uplift its security posture. I was given a 'current status' report, much like one that would be compiled after initial investigations and interviews with employees and stakeholders. Using the NIST CSF, I conducted a pass/fail assesment and presented recommendations for improvement. I decided to start with a short presentation to stakeholders to explain the framework and roadmap and ended with presenting them with a comprehensive list of recomendations and procedures to be implemented.
 
 ## CSF Core Functions
 The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOVER — organize cybersecurity outcomes at their highest level.
@@ -39,14 +39,113 @@ A Target Profile specifies the desired outcomes that an organization has selecte
 At all times the question should be asked whether data is kept *Confidential*, its *Integrity* is upheld, and is readily *Available* and what risks and vulnerabilities present a danger to this ‘CIA Triad’. 
 
 ![image](https://github.com/user-attachments/assets/5b8e35de-2c04-4de8-a82c-bb526a3f6f5c)
+------
+<details close> 
+<summary> <h3> Oscorp's Current status report (Click here)</h3> </summary>
+
+Current Oscorp cyber security team:
+- Cyber security analyst: generalist, responds to cyber incidents as they come. Reports
+to Oscorp’s IT manager.
+- Network engineer: manages the firewalls. Reports to the Network Team Leader.
+- Cyber Security Consultant: your new role it Oscorp. You will initially report to the IT
+manager.
+
+Oscorp Current Cyber Security Controls:
+- OrganisaDonal governance:
+  - CEO has a clear business strategy for the business. However, roles and
+responsibiliDes for cyber security haven’t been defined. They’re assigned to
+the IT team. There is no cyber security strategy.
+
+- Asset Management:
+  - The IT team has a spreadsheet with serial numbers of laptops.
+  - The spreadsheet includes the model of each machine and details about the
+warranty.
+  - Oscorp uses MicrosoK Office365 and relies exclusively on SoKware-as-a-
+Service applicaDons.
+  - All data is in MicrosoK Azure cloud
+  - The IT team uses a Secure OperaDng Environment (SOE) to image all their
+laptops with the latest Windows desktop version
+
+- Business ConDnuity and Disaster Recovery:
+  - The IT team conducts regular disaster recovery tesDng
+  - The IT team has clear and documented business conDnuity plans
+  - The IT team takes regular backups. Backups get tested periodically
+
+- Vulnerability management:
+  - Oscorp have purchased Qualys vulnerability scanner.
+  - The IT team uses Qualys on an ad-hoc basis.
+  - There is no formal vulnerability management program in place.
+  - Large number of high and severe vulnerabiliDes reported by Qualys
+
+- Risk management:
+  - Oscorp has a risk team that performs financial risk acDviDes.
+  - There is no technology or cyber risk process at Oscorp.
+
+- Third Party Risk Management:
+  - Oscorp doesn’t perform any third-party risk management.
+  - Contracts are reviewed by procurement and finance, not IT.
+
+- Identity and Access Management:
+  - Oscorp uses MicrosoK AcDve Directory to manage users and groups
+  - There is no privileged access management soluDon in place
+  - Admin account password is shared with a few senior members of the IT team
+  - Access to resources is granted upon request
+  - The organisaDon does not use two-factor authenDcaDon for login
+  - Complex login passwords are used
+  - Employees use a VPN soluDon to login remotely when required
+
+- Network security:
+  - The organisaDon has Palo Alto Next Gen firewalls.
+  - The firewalls have been configured by the network
+  - The firewalls get audited every year by the network team
+  - The firewalls get regular updates
+  - The IT team have up to date network diagrams. The diagrams include the
+cloud the environment.
+  - The network is segmented using VLANs.
+
+- Physical Security:
+  - Oscorp is a highly secure facility, with state-of-the-art CCTV cameras
+everywhere
+  - Oscorp takes physical very seriously
+  - They do extensive ve]ng for all their employees
+  - The have a 24/7 monitoring for their research labs and physical faciliDes
+
+- Data Security:
+  - Oscorp doesn’t have a DLP soluDon
+  - All data resides in MicrosoK Azure cloud and MicrosoK Office 365
+  - Key criDcal applicaDon is a SaaS service from Horizon Labs.
+
+- Policy:
+  - There is one generic IT policy in place
+  - No formal informaDon security policy
+  - There is no data governance policies or informaDon classificaDon
+
+- Cyber Security detecDon and response:
+  - There is no detecDon or response capability
+  - The IT team responds to alerts from the anD-virus (MicrosoK Defender)
+  - No SIEM in place
+
+- Security EducaDon and Awareness:
+  - All employees are required to do an inducDon web training module. The
+module includes basic instructions about cyber security.
+
+  </details>
+------
 
 Utilizing CSF Core functions as a guide, an assessment of Oscorp identified many deficiencies. Recommendations will be provided after each subcategory. 
 
-### IDENTIFY
 
-Nist Cybersecurity Framework 2.0:
-![Screenshot 2024-10-27 205100](https://github.com/user-attachments/assets/586dd539-f042-4bea-b9d2-290b8e445571)
-![Screenshot 2024-10-27 205255](https://github.com/user-attachments/assets/c0c4e42a-7736-48b1-ac59-92604fef17ca)
+
+### IDENTIFY
+<details close> 
+<summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
+
+ - ![Screenshot 2024-10-27 205100](https://github.com/user-attachments/assets/586dd539-f042-4bea-b9d2-290b8e445571)
+
+- ![Screenshot 2024-10-27 205255](https://github.com/user-attachments/assets/c0c4e42a-7736-48b1-ac59-92604fef17ca)
+
+  </details>
+
 ### Asset Management:
 -	*Physical devices and systems within the organization ARE properly inventoried, HOWEVER no IP address identified.* No access agents identified. This prohibits a vulnerability scanner from authenticating and accessing the device and limits the scope of the scanner.
 -	*External information systems are NOT properly catalogued.* Although third-party contracts are being tracked, there is no third-party risk management or IT involvement.
