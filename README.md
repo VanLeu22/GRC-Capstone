@@ -189,7 +189,7 @@ A comprehensive set of processes and procedures to manage cyber security risks n
 -	*Risk management processes are NOT established, managed and agreed to by organizational stakeholders.*
 -	*Organizational risk tolerance is undetermined and NOT clearly expressed.*
 
-A full-scale Cyber Security Risk Management policy needs to be implemented utilizing the **OWASP** (Open Worldwide Application Security Project) secure design principles. Use of NIST 800-53v3 implemented to test and verify the policy. Complete a document that outlines strategies for managing potential risks that could impact the organization. Utilizing a **Risk Matrix** to establish risk tolerance and priority. Tangible and non-tangible asset identification and categorization. 
+A full-scale Cyber Security Risk Management policy needs to be implemented utilizing the **[OWASP](https://owasp.org/)** (Open Worldwide Application Security Project) secure design principles. Use of [NIST 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) implemented to test and verify the policy. Complete a document that outlines strategies for managing potential risks that could impact the organization. Utilizing a **Risk Matrix** to establish risk tolerance and priority. Tangible and non-tangible asset identification and categorization. 
 
 ![Screenshot 2024-09-06 155149](https://github.com/user-attachments/assets/88309da8-792e-4e3d-a6ed-d7c293cfc655)
 
@@ -333,3 +333,9 @@ Analyze, test and update incident response plans continuously.
 ### Communications:
 
 Coordinate restoration activities with internal and external parties, such as coordinating centers, Internet Service Providers, owners of attacking systems, victims, other CSIRTs and vendors. Consider need for reputational damage mitigation policy.
+
+------
+
+## Conclusion
+
+After investigating Oscorp's security posture, I analysed the findings and overlayed them with the NIST CSF 2.0. I utilized relevant security frameworks like MITRE ATT@CK, NIST 800-53, OWASP and otheres to compile a comprehensive roadmap towards a secure security infrastructure. 
