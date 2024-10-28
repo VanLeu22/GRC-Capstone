@@ -1,4 +1,4 @@
-# Cyber Security Assessment utilizing NIST Cybersecurity framework (CSF) 2.0
+# Corporate Cybersecurity Assessment utilizing NIST CyberSecurity Framework (CSF) 2.0
 
 ## Introduction
 
@@ -9,13 +9,16 @@ The CSF Core Functions — GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, and RECOV
 
 | Core Functions  | Description
 | --------------- | -----
-| `Govern`          | The organization’s cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored.
-| `Identify`        | The organization’s current cybersecurity risks are understood.
-| `Protect`         | Safeguards to manage the organization’s cybersecurity risks are used.
-| `Detect`          | Possible cybersecurity attacks and compromises are found and analyzed.
-| `Respond`         | Actions regarding a detected cybersecurity incident are taken.
-| `Recover`         | Assets and operations affected by a cybersecurity incident are restored.
+| ![Screenshot 2024-10-28 134244](https://github.com/user-attachments/assets/c536c78f-b8d2-4988-a1ad-ea1b0222bd41) | The organization’s cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored.
+| ![Screenshot 2024-10-28 134430](https://github.com/user-attachments/assets/bd218bc5-9048-4d91-96fd-77aba367d87b) | The organization’s current cybersecurity risks are understood.
+| ![Screenshot 2024-10-28 134438](https://github.com/user-attachments/assets/f6554061-0d01-49e9-91df-b102eb4b8ac7) | Safeguards to manage the organization’s cybersecurity risks are used.
+| ![Screenshot 2024-10-28 134447](https://github.com/user-attachments/assets/26e591c9-9ee6-454f-9f5b-37062bec1d0c) | Possible cybersecurity attacks and compromises are found and analyzed.
+| ![Screenshot 2024-10-28 134456](https://github.com/user-attachments/assets/bfdf2e21-ced1-4767-8ac6-4ec982b6f5e3) | Actions regarding a detected cybersecurity incident are taken.
+| ![Screenshot 2024-10-28 134503](https://github.com/user-attachments/assets/10ef5d64-da8b-41df-a0fe-56acb244fd1c) | Assets and operations affected by a cybersecurity incident are restored.
 
+------
+<!-- GOVERN -->
+![Screenshot 2024-10-28 135023](https://github.com/user-attachments/assets/a9b93ba7-a2a2-4cdc-954f-8016f3df6e58)
 
 The rigor of an organization’s cybersecurity risk governance and management practices can be categorized according to a table of tiers as outlined in CSF 2.0 Profiles and Tiers. (See Fig. 1)
 
@@ -134,9 +137,9 @@ module includes basic instructions about cyber security.
 
 Utilizing CSF Core functions as a guide, an assessment of Oscorp identified many deficiencies. Recommendations will be provided after each subcategory. 
 
+<!--IDENTIFY-->
+![Screenshot 2024-10-28 134831](https://github.com/user-attachments/assets/9dc5bda1-08f0-4d90-b806-34621a19553a)
 
-
-### IDENTIFY
 <details close> 
 <summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
 
@@ -189,3 +192,139 @@ A full-scale Cyber Security Risk Management policy needs to be implemented utili
 ![Screenshot 2024-09-06 155149](https://github.com/user-attachments/assets/88309da8-792e-4e3d-a6ed-d7c293cfc655)
 
 
+
+<!--## PROTECT-->
+![Screenshot 2024-10-28 134843](https://github.com/user-attachments/assets/eaa0f70b-acb1-43ba-9186-53f4c406875c)
+<details close> 
+<summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
+
+![Screenshot 2024-10-28 141833](https://github.com/user-attachments/assets/83ff0872-74e1-4969-a1f2-29a639abb176)
+
+![Screenshot 2024-10-28 142000](https://github.com/user-attachments/assets/f36bc530-31e3-4425-a67d-2a70586aa605)
+
+![Screenshot 2024-10-28 142028](https://github.com/user-attachments/assets/cac40a40-e19a-464c-a819-e8f1651e5231)
+
+
+  </details>
+### Access Controls:
+
+-	*Identities and credentials are NOT adequately managed for authorized devices and users.* No use of Multi-Factor Authentication. No specified off-boarding procedures. No periodic access reviews established.
+-	*Physical access to assets is NOT managed and protected.* No verified entry/exit logs. No biometrics implemented. No access management policy in place.
+-	*Remote access is NOT adequately managed.* No Two-Factor Authentication for VPN. 
+-	*Access permissions are NOT managed, incorporating the principles of least privilege and separation of duties.* No Access management policy in place. Least privilege and Separation of Duties implementation inadequate.
+
+Identity and Access Management (IAM) policy needs to be established and implemented to determine access to resources and assets based on identity verification, validation, authentication and authorization of the subject (user, group, device, etc.) for a specific period of time.
+Policy should cover Multi-Factor Authentication (MFA), Access control lists (ACL), Roll-based access control, On- and Off-boarding procedures, Remote access directives to include 2FA.
+
+### Awareness Training:
+-	*All users are NOT informed and trained.* No regular training. Insufficient onboarding training. No Third-Party Training protocol established. 
+-	*Privileged users DO NOT understand roles and responsibilities.* No Privileged access management in place.
+-	*Third-party stakeholders (e.g., suppliers, customers, partners) DO NOT understand roles and responsibilities.* No Third-Party Training protocol or Risk Management established.
+-	*Senior executives DO NOT understand roles and responsibilities.* No dedicated executive security and board member awareness training established.
+-	*Physical and information security personnel DO NOT understand roles and responsibilities.* No roles or responsibilities established.
+
+Training and Education program needs established and implemented. Program needs to be ran periodically and kept up to date. Effectiveness needs to be verified. Training should be extended to Third-Party providers through the TPRM. Cyber Security roles and responsibilities need established and implemented. Establish dedicated training for executives and board members.
+
+### Data Security:
+-	*Data-at-rest is NOT adequately protected.* Although data is kept by Azure, the organization has not classified or labeled any data. No DLP strategy is implemented. 
+-	*Data-in-transit is NOT adequately protected.* No USB data transfer limitations are established.
+-	*Assets are NOT formally managed throughout removal, transfers and disposition.* No policies regarding asset offboarding or data disposal implemented.
+-	*No protections against data leaks are implemented.* No DLP strategy implemented
+
+A Data Loss Prevention method needs to be configured. Data needs to be classified and labeled for it to be effective. Movement and exfiltration of data (USB downloads) need to be monitored. Asset and data disposal policies need to be implemented.
+
+### Information Protection Processes and Procedures:
+-	*No configuration change control processes are in place.* No change management or documented policies in place.
+-	*Policy and regulations regarding the physical operating environment for organizational assets are NOT met.* Physical protection protocols are in place, yet no policies are defined.
+-	*Data is NOT destroyed according to policy.* No data disposal policy in place. 
+-	*Effectiveness of protection technologies is NOT shared with appropriate parties.*
+-	*Inadequate Cybersecurity in human resources practices. (e.g., deprovisioning, personnel screening).* No offboarding procedures in place.
+-	*NO vulnerability management plan is developed or implemented.* No effective or formally managed Vulnerability Management program implemented.
+
+Configuration change protocols need to be implemented and documented. Physical security policies need to be defined. Data disposal policy needs implemented. Data protection information sharing should be considered. Personnel offboarding procedures and policy needs implemented. Although vulnerability scans are occasionally performed, a formal and effective program and policy needs to be implemented.
+
+### Protective Technology:
+-	*Audit/log records are NOT determined, documented, implemented or reviewed in accordance with policy.* No event or log management is performed. No SIEM in place.
+-	*Removable media is NOT protected and its use restricted according to policy.* No data exfiltration policy in place.
+-	*Communications and control networks are NOT adequately protected.* Network traffic is not monitored adequately.
+
+A Security Information and Event Management (SIEM) needs to be implemented and aligned with industry standard framework (MITRE ATT&CK). Policy needs to be established and personnel appointed for monitoring. 
+
+<!--## DETECT-->
+![Screenshot 2024-10-28 134853](https://github.com/user-attachments/assets/2a5d2bd2-ba9b-4cff-84c2-840f73c4633b)
+
+<details close> 
+<summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
+
+![Screenshot 2024-10-28 142453](https://github.com/user-attachments/assets/e8f4d360-6015-451c-8484-3fc6b868b63b)
+
+![Screenshot 2024-10-28 142508](https://github.com/user-attachments/assets/7fc2cbd1-0dcd-4818-8413-c17ef30d0716)
+
+
+  </details>
+
+  
+### Anomalies and Events:
+
+Implement a SIEM to capture and monitor network traffic. Monitor logs and events, analyze threats, classify low/medium/high impact events based on criticality and establish escalation points.
+
+### Security Continuous Monitoring:
+
+Implement a SIEM to capture and monitor network traffic. Merely monitoring traffic and alerts through Microsoft Defender is critically inadequate. Scope of monitoring needs to be defined. Implement detection and response procedures and capabilities. Implement proper Third-Party Risk Management Policy. Implement a formal Vulnerability Management Policy and run scan periodically according to policy.
+
+### Detection Processes:
+
+Detection and response capabilities need to be established. Roles and responsibilities need to be defined and implemented. Separation of duties between IT department and Cyber security department need to be considered. Use periodic Penetration Test to verify robustness of security posture.
+
+<!-- RESPOND-->
+
+![Screenshot 2024-10-28 134902](https://github.com/user-attachments/assets/0e5fa430-0cea-4d22-be43-912381a82917)
+
+<details close> 
+<summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
+
+
+![Screenshot 2024-10-28 142705](https://github.com/user-attachments/assets/ef22e6a8-8635-47a4-abfc-80181246c01c)
+
+
+  </details>
+
+
+### Response Planning:
+
+A Cybersecurity response process and policy needs to be established. 
+
+### Communications:
+
+Incident response activities need to be determined and communicated with internal and external stakeholders. Include all contact details and establish thresholds and escalation points. Communicate with proper authorities when necessary and share findings with industry peers
+
+### Analysis:
+
+Ensure analysis is conducted to determine adequate response and support recovery activities. Document criticality of incidents. Consider the ability for forensic investigations when needs. 
+
+### Mitigation:
+
+- Ensure Incident response plans follow a standard that ensure that incidents are contained and mitigated (SANS incident response plans).
+- Establish Vulnerability Management Program to aid in identifying and categorizing new, known and unknown vulnerabilities.
+- Establish a process for dealing with ‘Zero-day’ vulnerabilities.
+
+### Improvements: 
+
+Analyze, test and update incident response plans continuously. 
+
+<!--## RECOVER-->
+![Screenshot 2024-10-28 134912](https://github.com/user-attachments/assets/b595cac7-1881-4388-b3ac-4e5f59a099fc)
+
+<details close> 
+<summary> <h3> Nist Cybersecurity Framework 2.0 Pass/Fail logs (Click here)</h3> </summary>
+
+
+![Screenshot 2024-10-28 142747](https://github.com/user-attachments/assets/92ba5adc-b78e-447e-bba8-c2d2103bdefc)
+
+
+
+  </details>
+
+### Communications:
+
+Coordinate restoration activities with internal and external parties, such as coordinating centers, Internet Service Providers, owners of attacking systems, victims, other CSIRTs and vendors. Consider need for reputational damage mitigation policy.
