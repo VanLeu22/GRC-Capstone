@@ -160,6 +160,7 @@ Third-party risk management policy needs to be implemented and IT department nee
 Assets need to be labeled with a sensitivity or criticality classification determined by the Maximum Tolerable Outage matrix. See figure below for example.
 
 ![image](https://github.com/user-attachments/assets/0fd3f160-1f11-4da1-a781-d0837b1115c7)
+
 `(RPO=recovery point objective, RTO=recovery time objective, WRT=working recovery time)`
 
 Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) need to be established and implemented.
