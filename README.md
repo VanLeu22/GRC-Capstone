@@ -340,3 +340,6 @@ Coordinate restoration activities with internal and external parties, such as co
 ## Conclusion
 
 After investigating Oscorp's security posture, I analysed the findings and overlayed them with the NIST CSF 2.0. I utilized relevant security frameworks like MITRE ATT@CK, NIST 800-53, OWASP and others to compile a comprehensive roadmap towards a secure security infrastructure. 
+
+![Screenshot 2024-10-28 142028](https://github.com/user-attachments/assets/b173a58f-a7ac-4125-a78b-9af554df7363)
+
